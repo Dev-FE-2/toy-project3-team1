@@ -27,21 +27,6 @@
     url('/public/fonts/Pretendard-Bold.subset.woff') format('woff');
 }
 
-/*
-  hidden
-  단순히 시각적으로 감추는 것이 목적이라면 opacity0이나 displaynone 대신 이것을 사용
-*/
-.visually-hidden {
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  white-space: nowrap;
-  border: 0;
-}
-
 :root {
   /* 컨테이너 좌우 간격 */
   --layout-padding: 1.2rem;

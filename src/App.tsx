@@ -1,3 +1,9 @@
+import PlayListSkeleton from './components/playlist/PlayListSkeleton'
+
 export default function App() {
-  return <h1>App.tsx</h1>
+  return (
+    <>
+      <PlayListSkeleton />
+    </>
+  )
 }

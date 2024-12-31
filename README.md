@@ -1,3 +1,3 @@
-# toy-project2-team2-Floli
+# toy-projec3-team1-Floli
 
-🌌 TEAM2 Floli의 레포지토리입니다
+🌌 TEAM1 Floli의 레포지토리입니다

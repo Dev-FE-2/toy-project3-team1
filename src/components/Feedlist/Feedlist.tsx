@@ -1,4 +1,4 @@
-import * as S from './Feedlist.styles'
+import * as S from './FeedList.styles'
 import { FeedFooter } from './Footer'
 
 const FeedList = ({
@@ -30,7 +30,11 @@ const FeedList = ({
         <S.TextWrapper>
           <S.Title>{title}</S.Title>
           <S.Subtitle>{subtitle}</S.Subtitle>
-          <FeedFooter likes={likes} comments={comments} date={date} />
+          <FeedFooter
+            likes={likes}
+            comments={comments}
+            date={date}
+          />
         </S.TextWrapper>
       </S.ContentWrapper>
     </S.CardContainer>

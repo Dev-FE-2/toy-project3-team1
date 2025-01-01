@@ -1,9 +1,9 @@
-import * as S from './Feedlist.styles'
+import * as S from './FeedList.styles'
 import { FaHeart } from 'react-icons/fa'
 import { BiConversation } from 'react-icons/bi'
 
 export const FeedFooter = ({ likes, comments, date }: any) => (
-  <S.FooterContent>
+  <S.Footer>
     <S.Stat>
       <S.Icon>
         <FaHeart />
@@ -18,5 +18,5 @@ export const FeedFooter = ({ likes, comments, date }: any) => (
     </S.Stat>
     <S.Stat>{date}</S.Stat>
     <S.OptionsIcon />
-  </S.FooterContent>
+  </S.Footer>
 )

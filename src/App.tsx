@@ -1,6 +1,6 @@
-import DetailPlayList from './components/DetailPlayList/DetailPlaylist'
-import FeedList from './components/Feedlist/Feedlist'
-import PlayList from './components/Playlist/Playlist'
+import DetailPlayList from './components/DetailPlayList/DetailPlayList'
+import FeedList from './components/FeedList/FeedList'
+import PlayList from './components/PlayList/PlayList'
 
 export default function App() {
   return (

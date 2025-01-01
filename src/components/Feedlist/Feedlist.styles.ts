@@ -8,7 +8,7 @@ export const CardContainer = styled.div`
   background-color: var(--color-bg1);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-s);
-  max-width: 300px;
+  max-width: 360px;
 `
 
 export const ImageWrapper = styled.div`
@@ -79,29 +79,26 @@ export const Subtitle = styled.p`
   color: var(--color-gray);
   margin: var(--spacing-1) 0 0;
 `
-
-export const FooterContent = styled.div`
+export const Footer = styled.div`
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 100%;
+  gap: var(--spacing-5);
   color: var(--color-gray);
-  padding: var(--spacing-2);
+  margin: var(--spacing-2) 0;
 `
-
 export const Stat = styled.div`
   display: flex;
   align-items: center;
   font-size: var(--fs-m);
   gap: var(--spacing-1);
 `
-
 export const Icon = styled.span`
   font-size: var(--fs-m);
 `
 
 export const OptionsIcon = styled(FaEllipsisH)`
   font-size: var(--fs-l);
+  margin-left: auto;
   margin-bottom: var(--spacing-1);
   color: var(--color-gray);
   cursor: pointer;

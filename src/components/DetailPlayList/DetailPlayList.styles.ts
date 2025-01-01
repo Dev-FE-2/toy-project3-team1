@@ -4,7 +4,7 @@ export const CardContainer = styled.div`
   display: flex;
   align-items: center;
   border-radius: var(--radius-md);
-  max-width: 300px;
+  max-width: 340px;
 `
 
 export const ImageWrapper = styled.div`

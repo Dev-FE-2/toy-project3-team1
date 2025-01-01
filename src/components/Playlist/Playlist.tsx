@@ -1,6 +1,6 @@
-import { FaHeart} from 'react-icons/fa'
+import { FaHeart } from 'react-icons/fa'
 import { FaEllipsisH } from 'react-icons/fa'
-import * as S from './Playlist.styles'
+import * as S from './PlayList.styles'
 import { PlayListFooter } from './Footer'
 
 const PlayList = ({

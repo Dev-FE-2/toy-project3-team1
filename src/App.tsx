@@ -1,6 +1,6 @@
 import DetailPlayList from './components/DetailPlayList/DetailPlaylist'
 import FeedList from './components/Feedlist/Feedlist'
-import CompactFeedList from './components/Playlist/Playlist'
+import PlayList from './components/Playlist/Playlist'
 
 export default function App() {
   return (
@@ -19,17 +19,16 @@ export default function App() {
       />
       --
       <h1>Playlist</h1>
-      <CompactFeedList
+      <PlayList
         image="https://gongu.copyright.or.kr/gongu/wrt/cmmn/wrtFileImageView.do?wrtSn=9046601&filePath=L2Rpc2sxL25ld2RhdGEvMjAxNC8yMS9DTFM2L2FzYWRhbFBob3RvXzI0MTRfMjAxNDA0MTY=&thumbAt=Y&thumbSe=b_tbumb&wrtTy=10004"
         title="곰돌이 푸 그리고 피글렛고 피글렛곰돌이 푸고 피글렛곰돌이 푸 피글렛곰돌이"
         date="2024/12/30"
         likes={284}
         comments={32}
         isLocked={false}
-        optionIcon="heart" // 'heart' 또는 'bookmark'
+        optionIcon="heart"
       />
-      --
-      <CompactFeedList
+      <PlayList
         image="https://gongu.copyright.or.kr/gongu/wrt/cmmn/wrtFileImageView.do?wrtSn=9046601&filePath=L2Rpc2sxL25ld2RhdGEvMjAxNC8yMS9DTFM2L2FzYWRhbFBob3RvXzI0MTRfMjAxNDA0MTY=&thumbAt=Y&thumbSe=b_tbumb&wrtTy=10004"
         title="곰돌이 푸 그리고 피글렛고 피글렛곰돌이"
         date="2024/12/30"
@@ -38,8 +37,7 @@ export default function App() {
         isLocked={true}
         optionIcon="bookmark"
       />
-      --
-      <CompactFeedList
+      <PlayList
         image="https://gongu.copyright.or.kr/gongu/wrt/cmmn/wrtFileImageView.do?wrtSn=9046601&filePath=L2Rpc2sxL25ld2RhdGEvMjAxNC8yMS9DTFM2L2FzYWRhbFBob3RvXzI0MTRfMjAxNDA0MTY=&thumbAt=Y&thumbSe=b_tbumb&wrtTy=10004"
         title="곰돌이 푸 그리고 피글렛"
         date="2024/12/30"

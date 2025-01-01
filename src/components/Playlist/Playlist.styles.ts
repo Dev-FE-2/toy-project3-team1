@@ -4,7 +4,6 @@ import { MdOutlinePlaylistAdd } from 'react-icons/md'
 export const CardContainer = styled.div`
   display: flex;
   align-items: center;
-  background-color: var(--color-bg1);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-s);
   max-width: 300px;

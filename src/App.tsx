@@ -1,9 +1,3 @@
-import PlayListSkeleton from './components/playlist/PlayListSkeleton'
-
 export default function App() {
-  return (
-    <>
-      <PlayListSkeleton />
-    </>
-  )
+  return <div>app</div>
 }

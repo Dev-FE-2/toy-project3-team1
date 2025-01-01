@@ -7,6 +7,7 @@ interface IconProps {
 
 export const NavbarWrapper = styled.div`
   position: fixed;
+  width: 100%;
   bottom: 0;
   left: 0;
   right: 0;
@@ -17,6 +18,7 @@ export const NavbarWrapper = styled.div`
 
 export const Menu = styled.div`
   display: flex;
+  flex: 1;
   justify-content: space-around;
   align-items: center;
   padding: 1rem;
@@ -35,7 +37,6 @@ export const MenuItem = styled.div`
 `
 
 export const Icon = styled.div<IconProps>`
-  font-size: ${({ size }) => size || 4.8}rem;
-  font-size: 24px;
-  margin-bottom: 5px;
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
 `

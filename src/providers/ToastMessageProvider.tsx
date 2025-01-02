@@ -31,6 +31,7 @@ export const ToastMessageProvider = ({
       prev.filter(toastMessage => toastMessage.id !== id)
     )
   }, [])
+
   const showToastMessage = useCallback(
     ({
       message,

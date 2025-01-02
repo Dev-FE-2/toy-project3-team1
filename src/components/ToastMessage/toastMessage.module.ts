@@ -17,9 +17,9 @@ export const ToastItemContainer = styled.div<{ type: ToastMessageType }>`
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 1rem;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 1rem;
+  padding: var(--spacing-3);
+  box-shadow: var(--shadow-s);
+  border-radius: var(--radius-base);
   animation: ${slideIn} 0.3s ease-in-out;
   ${props =>
     props.type === 'error' &&

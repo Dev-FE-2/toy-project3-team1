@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "prepare": "husky install",
+    "prepare": "husky && husky install",
     "test": "echo \"testing\""
   },
   "dependencies": {
@@ -20,6 +20,8 @@
     "zustand": "^5.0.2"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
     "@eslint/js": "^9.13.0",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
@@ -43,8 +45,8 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "prettier --cache --write",
-      "eslint --cache --fix --max-warnings=0"
+      "eslint --fix",
+      "prettier --config ./.prettierrc --write -u"
     ]
   }
 }

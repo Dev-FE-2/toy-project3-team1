@@ -6,12 +6,12 @@ export const CardContainer = styled.div`
   align-items: center;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-s);
-  max-width: 340px;
+  max-width: 34rem;
 `
 
 export const ImageWrapper = styled.div`
-  width: 80px;
-  height: 70px;
+  width: 8rem;
+  height: 7rem;
   border-radius: var(--radius-md);
   overflow: hidden;
   flex-shrink: 0;

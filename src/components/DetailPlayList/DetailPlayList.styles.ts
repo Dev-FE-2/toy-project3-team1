@@ -4,12 +4,12 @@ export const CardContainer = styled.div`
   display: flex;
   align-items: center;
   border-radius: var(--radius-md);
-  max-width: 340px;
+  max-width: 34rem;
 `
 
 export const ImageWrapper = styled.div`
-  width: 110px;
-  height: 70px;
+  width: 11rem;
+  height: 7rem;
   border-radius: var(--radius-md);
   overflow: hidden;
   flex-shrink: 0;

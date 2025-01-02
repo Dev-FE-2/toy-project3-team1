@@ -8,12 +8,12 @@ export const CardContainer = styled.div`
   background-color: var(--color-bg1);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-s);
-  max-width: 360px;
+  max-width: 36rem;
 `
 
 export const ImageWrapper = styled.div`
   width: 100%;
-  height: 150px;
+  height: 15rem;
   position: relative;
   overflow: hidden;
   border-radius: var(--radius-md);
@@ -43,8 +43,8 @@ export const ContentWrapper = styled.div`
 `
 
 export const ProfileImage = styled.div`
-  width: 50px;
-  height: 50px;
+  width: 5rem;
+  height: 5rem;
   border-radius: var(--radius-full);
   overflow: hidden;
   margin-right: var(--spacing-4);

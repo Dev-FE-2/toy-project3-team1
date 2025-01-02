@@ -4,23 +4,23 @@ export const HeaderWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 3rem;
-  background-color: #fff;
-  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+  padding: var(--spacing-3) 3rem;
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-s);
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: var(--header-index);
   width: 100%;
-  height: 8%;
+  height: 6rem;
   box-sizing: border-box;
 `
 
 export const Logo = styled.div`
   font-size: 2.4rem;
-  font-weight: bold;
-  color: #333;
+  font-weight: 700;
+  color: var(--color-black);
 `
 
 export const SearchIcon = styled.div`

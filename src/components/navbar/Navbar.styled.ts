@@ -11,9 +11,9 @@ export const NavbarWrapper = styled.div`
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #fff;
-  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
-  z-index: 2;
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-s);
+  z-index: var(--header-index);
 `
 
 export const Menu = styled.div`
@@ -22,7 +22,7 @@ export const Menu = styled.div`
   justify-content: space-around;
   align-items: center;
   padding: 1rem;
-  background-color: #fff;
+  background-color: var(--color-white);
 `
 
 export const MenuItem = styled.div`

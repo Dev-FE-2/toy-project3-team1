@@ -8,7 +8,7 @@ export default function HeaderSub({ children }: { children: ReactNode }) {
       <S.Logo>
         <IoChevronBack />
       </S.Logo>
-      <S.Content>{children ? children : '콘텐츠 내용'}</S.Content>
+      <S.Content>{children ? children : ''}</S.Content>
     </S.HeaderWrapper>
   )
 }

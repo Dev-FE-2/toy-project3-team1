@@ -17,6 +17,7 @@ import { PlayListProps } from '@/types/List'
       />
 */
 
+
 const PlayList = ({
   image,
   title,

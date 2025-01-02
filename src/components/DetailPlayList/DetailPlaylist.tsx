@@ -1,5 +1,13 @@
 import * as S from './DetailPlayList.styles'
 
+/* 사용예시
+     <DetailPlayList
+        image=""
+        title=""
+        nickname=""
+      />
+*/
+
 const DetailPlayList = ({
   image,
   title,

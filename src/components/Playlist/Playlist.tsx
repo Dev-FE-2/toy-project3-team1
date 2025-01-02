@@ -4,6 +4,19 @@ import * as S from './PlayList.styles'
 import { PlayListFooter } from './Footer'
 import { PlayListProps } from '@/types/List'
 
+/* 사용예시
+     <PlayList
+        image=""
+        title=""
+        date=""
+        likes={}
+        comments={}
+        optionIcon="" ('heart' | 'bookmark' | 'option')
+        isLocked={}  // 선택사항- 지정하지 않으면 안보임
+        nickname="김아무"  // 선택사항- 지정하지 않으면 안보임
+      />
+*/
+
 const PlayList = ({
   image,
   title,

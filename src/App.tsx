@@ -1,9 +1,9 @@
-import PlayListSkeleton from './components/playlist/PlayListSkeleton'
+import HeaderSub from './components/header/header-sub/HeaderSub'
 
 export default function App() {
   return (
-    <div>
-      <PlayListSkeleton />
-    </div>
+    <>
+      <HeaderSub children="" />
+    </>
   )
 }

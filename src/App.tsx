@@ -1,3 +1,9 @@
+import HeaderSub from './components/header/header-sub/HeaderSub'
+
 export default function App() {
-  return <h1>App.tsx</h1>
+  return (
+    <>
+      <HeaderSub children="" />
+    </>
+  )
 }

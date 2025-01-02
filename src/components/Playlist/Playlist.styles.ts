@@ -53,13 +53,14 @@ export const Footer = styled.div`
 export const Stat = styled.div`
   display: flex;
   align-items: center;
-  font-size: var(--fs-s);
+  font-size: var(--fs-m);
   gap: var(--spacing-1);
 `
 
 export const Options = styled.div`
   font-size: var(--fs-l);
   margin: 0 var(--spacing-4) 0 var(--spacing-2);
+  cursor: pointer;
 `
 
 export const Icon = styled.span`

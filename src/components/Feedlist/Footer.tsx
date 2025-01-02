@@ -2,7 +2,15 @@ import * as S from './FeedList.styles'
 import { FaHeart } from 'react-icons/fa'
 import { BiConversation } from 'react-icons/bi'
 
-export const FeedFooter = ({ likes, comments, date }: any) => (
+export const FeedFooter = ({
+  likes,
+  comments,
+  date
+}: {
+  likes: number
+  comments: number
+  date: string
+}) => (
   <S.Footer>
     <S.Stat>
       <S.Icon>

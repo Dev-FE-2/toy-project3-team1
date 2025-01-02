@@ -1,3 +1,4 @@
+import { FeedListProps } from '@/types/List'
 import * as S from './FeedList.styles'
 import { FeedFooter } from './Footer'
 
@@ -10,7 +11,7 @@ const FeedList = ({
   comments,
   date,
   track
-}: any) => {
+}: FeedListProps) => {
   return (
     <S.CardContainer>
       <S.ImageWrapper>

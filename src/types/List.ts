@@ -1,0 +1,21 @@
+export interface FeedListProps {
+  image: string
+  profileImage: string
+  title: string
+  subtitle: string
+  likes: number
+  comments: number
+  date: string
+  track: number
+}
+
+export interface PlayListProps {
+  image: string
+  title: string
+  date: string
+  likes: number
+  comments: number
+  isLocked?: boolean
+  optionIcon?: 'heart' | 'bookmark' | 'option'
+  nickname?: string
+}

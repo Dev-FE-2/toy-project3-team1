@@ -1,6 +1,14 @@
 import * as S from './DetailPlayList.styles'
 
-const DetailPlayList = ({ image, title, subtitle }: any) => {
+const DetailPlayList = ({
+  image,
+  title,
+  nickname
+}: {
+  image: string
+  title: string
+  nickname: string
+}) => {
   return (
     <S.CardContainer>
       <S.ImageWrapper>
@@ -11,7 +19,7 @@ const DetailPlayList = ({ image, title, subtitle }: any) => {
       </S.ImageWrapper>
       <S.TextWrapper>
         <S.Title>{title}</S.Title>
-        <S.Subtitle>{subtitle}</S.Subtitle>
+        <S.nickname>{nickname}</S.nickname>
       </S.TextWrapper>
     </S.CardContainer>
   )

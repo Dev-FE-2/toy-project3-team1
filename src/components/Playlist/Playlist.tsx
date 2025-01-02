@@ -2,6 +2,7 @@ import { FaHeart } from 'react-icons/fa'
 import { FaEllipsisH } from 'react-icons/fa'
 import * as S from './PlayList.styles'
 import { PlayListFooter } from './Footer'
+import { PlayListProps } from '@/types/List'
 
 const PlayList = ({
   image,
@@ -9,9 +10,10 @@ const PlayList = ({
   date,
   likes,
   comments,
-  isLocked = false,
-  optionIcon
-}: any) => {
+  isLocked,
+  optionIcon,
+  nickname
+}: PlayListProps) => {
   return (
     <S.CardContainer>
       <S.ImageWrapper>
@@ -27,6 +29,7 @@ const PlayList = ({
           likes={likes}
           comments={comments}
           isLocked={isLocked}
+          nickname={nickname}
         />
       </S.TextWrapper>
       <S.Options>

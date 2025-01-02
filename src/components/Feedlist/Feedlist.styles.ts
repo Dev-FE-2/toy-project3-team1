@@ -74,7 +74,7 @@ export const Title = styled.h3`
   -webkit-box-orient: vertical;
 `
 
-export const Subtitle = styled.p`
+export const nickname = styled.p`
   font-size: var(--fs-m);
   color: var(--color-gray);
   margin: var(--spacing-1) 0 0;

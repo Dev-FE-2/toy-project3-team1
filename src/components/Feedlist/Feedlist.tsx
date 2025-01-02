@@ -7,7 +7,7 @@ import { FeedFooter } from './Footer'
         image=""
         profileImage=""
         title=""
-        subtitle=""
+        nickname=""
         likes={}
         comments={}
         date=""
@@ -18,7 +18,7 @@ const FeedList = ({
   image,
   profileImage,
   title,
-  subtitle,
+  nickname,
   likes,
   comments,
   date,
@@ -42,7 +42,7 @@ const FeedList = ({
         </S.ProfileImage>
         <S.TextWrapper>
           <S.Title>{title}</S.Title>
-          <S.Subtitle>{subtitle}</S.Subtitle>
+          <S.nickname>{nickname}</S.nickname>
           <FeedFooter
             likes={likes}
             comments={comments}

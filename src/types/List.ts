@@ -2,7 +2,7 @@ export interface FeedListProps {
   image: string
   profileImage: string
   title: string
-  subtitle: string
+  nickname: string
   likes: number
   comments: number
   date: string

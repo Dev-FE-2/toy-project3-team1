@@ -13,7 +13,7 @@ import { PlayListProps } from '@/types/List'
         comments={}
         optionIcon="" ('heart' | 'bookmark' | 'option')
         isLocked={}  // 선택사항- 지정하지 않으면 안보임
-        nickname="김아무"  // 선택사항- 지정하지 않으면 안보임
+        nickname=""  // 선택사항- 지정하지 않으면 안보임
       />
 */
 

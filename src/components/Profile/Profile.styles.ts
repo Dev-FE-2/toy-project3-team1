@@ -7,16 +7,16 @@ export const ProfileButtonWrapper = styled.button<{ size?: ProfileButtonSize }>`
   padding: 0;
   cursor: pointer;
   width: ${({ size }) => {
-    if (size === 'small') return '4rem'
-    if (size === 'medium') return '6.5rem'
-    if (size === 'large') return '20rem'
+    if (size === 'small') return '2rem'
+    if (size === 'medium') return '3.5rem'
+    if (size === 'large') return '10rem'
     return size || '6.5rem'
   }};
   height: ${({ size }) => {
-    if (size === 'small') return '4rem'
-    if (size === 'medium') return '6.5rem'
-    if (size === 'large') return '20rem'
-    return size || '6.5rem'
+    if (size === 'small') return '2rem'
+    if (size === 'medium') return '3.5rem'
+    if (size === 'large') return '10rem'
+    return size || '3.5rem'
   }};
   border-radius: var(--radius-xl);
   overflow: hidden;

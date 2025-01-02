@@ -55,7 +55,7 @@ export const ItemAvatar = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  flex: 0 0 auto;
+  flex: 0 0 auto; /* 증가너비 감소너비 기본너비 */
   width: 100px;
 `
 

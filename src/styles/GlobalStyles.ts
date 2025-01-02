@@ -3,6 +3,10 @@ import '@/styles/reset.css'
 import '@/styles/common.css'
 
 export const GlobalStyle = createGlobalStyle`
+  #root {
+    background: gray;
+  }
+
   /*
     hidden
     단순히 시각적으로 감추는 것이 목적이라면 opacity0이나 displaynone 대신 이것을 사용

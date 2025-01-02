@@ -1,7 +1,9 @@
+import HeaderSub from './components/header/header-sub/HeaderSub'
+
 export default function App() {
   return (
-    <div>
-      <div>app</div>
-    </div>
+    <>
+      <HeaderSub children="" />
+    </>
   )
 }

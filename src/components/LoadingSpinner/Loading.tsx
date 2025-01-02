@@ -5,7 +5,6 @@ export default function Loading() {
     <>
       <S.Container>
         <S.Wrapper>
-          <S.OuterCircle />
           <S.InnerCircle />
         </S.Wrapper>
       </S.Container>

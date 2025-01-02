@@ -28,6 +28,9 @@
 }
 
 :root {
+  /*Header 높이 값*/
+  --header-height: 6rem;
+
   /* 컨테이너 좌우 간격 */
   --layout-padding: 1.2rem;
 

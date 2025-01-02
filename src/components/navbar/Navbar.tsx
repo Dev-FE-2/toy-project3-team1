@@ -20,14 +20,18 @@ export default function Navbar() {
   return (
     <S.NavbarWrapper>
       <S.Menu>
-        <S.MenuItem onClick={() => handleClick('home')}>
+        <S.MenuItem
+          onClick={() => handleClick('home')}
+          to="/">
           <S.Icon active={active === 'home'}>
             {active === 'home' ? <IoHomeSharp /> : <IoHomeOutline />}
           </S.Icon>
           <span>홈</span>
         </S.MenuItem>
 
-        <S.MenuItem onClick={() => handleClick('subscribe')}>
+        <S.MenuItem
+          onClick={() => handleClick('subscribe')}
+          to="/subscribe">
           <S.Icon active={active === 'subscribe'}>
             {active === 'subscribe' ? (
               <MdSubscriptions />
@@ -38,7 +42,9 @@ export default function Navbar() {
           <span>구독</span>
           {/* 플리추가  */}
         </S.MenuItem>
-        <S.MenuItem onClick={() => handleClick('add')}>
+        <S.MenuItem
+          onClick={() => handleClick('add')}
+          to="/add">
           <S.Icon active={active === 'add'}>
             {active === 'add' ? (
               <IoAddCircle size={48} />
@@ -48,7 +54,9 @@ export default function Navbar() {
           </S.Icon>
         </S.MenuItem>
         {/* 내 플리 */}
-        <S.MenuItem onClick={() => handleClick('mine')}>
+        <S.MenuItem
+          onClick={() => handleClick('mine')}
+          to="/mypli">
           <S.Icon active={active === 'mine'}>
             {active === 'mine' ? (
               <MdPlaylistAddCheckCircle />
@@ -59,7 +67,7 @@ export default function Navbar() {
           <span>내 플리</span>
         </S.MenuItem>
         {/* 유저 프로필 사진 */}
-        <S.MenuItem>
+        <S.MenuItem to="/profile">
           <S.Icon>프로필</S.Icon>
           <span>라이브러리</span>
         </S.MenuItem>

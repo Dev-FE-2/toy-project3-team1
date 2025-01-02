@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 interface IconProps {
   active?: boolean
@@ -25,13 +26,13 @@ export const Menu = styled.div`
   background-color: var(--color-white);
 `
 
-export const MenuItem = styled.div`
+export const MenuItem = styled(Link)`
   align-items: center;
   cursor: pointer;
   text-align: center;
 
   span {
-    font-size: 1.2rem;
+    font-size: var(--fs-m);
     color: #333;
   }
 `

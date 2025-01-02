@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const HeaderWrapper = styled.div`
   display: flex;
   align-items: center;
-  padding: 1rem 3rem;
+  padding: var(--spacing-3) var(--spacing-4);
   background-color: var(--color-white);
   box-shadow: var(--shadow-s);
   position: fixed;
@@ -12,7 +12,7 @@ export const HeaderWrapper = styled.div`
   right: 0;
   z-index: var(--header-index);
   width: 100%;
-  height: 6rem;
+  height: var(--header-height);
   box-sizing: border-box;
 `
 

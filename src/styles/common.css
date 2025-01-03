@@ -29,7 +29,7 @@
 
 :root {
   /* max-width */
-  --max-width: 768px;
+  --max-width: 600px;
 
   /*Header 높이 값*/
   --header-height: 6rem;

@@ -1,18 +1,18 @@
 import { IoChevronBack } from 'react-icons/io5'
 import * as S from './Header.styled'
 import { ReactNode } from 'react'
-// import { useNavigate } from 'react-router-dom'
 
-export default function HeaderSub({ children }: { children: ReactNode }) {
-  // const navigate = useNavigate()
+//컨텐츠 내용과 이벤트는 props로 넣어주세요!
 
-  // function handleBack() {
-  //   navigate(-1)
-  // }
+interface HeaderSubProps {
+  children: ReactNode
+  onClick?: () => void
+}
 
+export default function HeaderSub({ children, onClick }: HeaderSubProps) {
   return (
     <S.HeaderWrapper>
-      <S.Logo>
+      <S.Logo onClick={onClick}>
         <IoChevronBack />
       </S.Logo>
       <S.Content>{children ? children : ''}</S.Content>

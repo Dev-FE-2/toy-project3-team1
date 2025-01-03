@@ -8,15 +8,15 @@ interface IconProps {
 
 export const NavbarWrapper = styled.div`
   position: fixed;
-  width: 100%;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: var(--max-width);
   background-color: var(--color-white);
   box-shadow: var(--shadow-s);
   z-index: var(--header-index);
 `
-
 export const Menu = styled.div`
   display: flex;
   flex: 1;

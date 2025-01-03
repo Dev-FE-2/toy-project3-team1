@@ -6,8 +6,7 @@ export const HeaderWrapper = styled.div`
   align-items: center;
   padding: var(--spacing-3) var(--spacing-4);
   background-color: var(--color-white);
-  box-shadow: var(--shadow-s);
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;

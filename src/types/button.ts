@@ -1,10 +1,10 @@
-export type ButtonColor = 'purple' | 'violet'
-type ButtonSize = 'small' | 'medium' | 'large'
-
-export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  color?: ButtonColor
-  size?: ButtonSize
-  fontSize?: string
+export type TButtonProps = {
+  className?: string
+  color?: string
   padding?: string
+  onClick?: () => void
+  children?: React.ReactNode
+  disabled?: boolean
+  fontSize?: string
+  width?: string
 }

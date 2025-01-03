@@ -29,7 +29,7 @@ const Profile = ({
 }: ProfileButtonProps) => {
   return (
     <S.ProfileButtonWrapper
-      to={`profile/${userId}`}
+      to={`/profile/${userId}`}
       size={size}>
       <S.ProfileImage
         src={imageUrl}

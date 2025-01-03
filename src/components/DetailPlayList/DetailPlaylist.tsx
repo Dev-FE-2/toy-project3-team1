@@ -1,4 +1,5 @@
 import * as S from './DetailPlayList.styles'
+
 interface DetailPlayListProps {
   image: string
   title: string

@@ -31,7 +31,7 @@ export const TextWrapper = styled.div`
 
 export const Title = styled.h4`
   font-size: var(--fs-l);
-  font-weight: bold;
+  font-weight: 700;
   color: var(--color-black);
   margin: 0;
   overflow: hidden;

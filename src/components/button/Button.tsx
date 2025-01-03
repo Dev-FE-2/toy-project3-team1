@@ -8,6 +8,7 @@ export function Button({
   onClick,
   children,
   fontSize,
+  width,
   disabled = false
 }: TButtonProps) {
   return (
@@ -17,6 +18,7 @@ export function Button({
       $padding={padding}
       onClick={onClick}
       $fontSize={fontSize}
+      width={width}
       disabled={disabled}>
       {children}
     </S.StyledButton>

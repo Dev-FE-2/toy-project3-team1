@@ -6,4 +6,5 @@ export type TButtonProps = {
   children?: React.ReactNode
   disabled?: boolean
   fontSize?: string
+  width?: string
 }

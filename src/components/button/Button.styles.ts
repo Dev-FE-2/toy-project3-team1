@@ -4,6 +4,7 @@ export const StyledButton = styled.button<{
   $padding?: string
   $color?: string
   $fontSize?: string
+  width?: string
 }>`
   padding: ${props => props.$padding || 'var(--spacing-3) var(--spacing-6)'};
   color: ${props => props.$color || 'var(--color-white)'};
@@ -11,6 +12,8 @@ export const StyledButton = styled.button<{
   background-color: var(--color-main3);
   font-size: ${props => props.$fontSize || '1.6rem'};
   font-weight: 500;
+  width: ${props => props.width || '1rem'};
+
   transition: all 0.3s;
   cursor: pointer;
 

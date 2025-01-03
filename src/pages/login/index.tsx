@@ -5,11 +5,8 @@ import LogoImage from '@/assets/img/logo/image.png'
 import { Button } from '@/components/button/Button'
 import * as S from './login.styles'
 import { useForm, SubmitHandler } from 'react-hook-form'
-
-type LoginFormInputs = {
-  email: string
-  password: string
-}
+import { zodResolver } from '@hookform/resolvers/zod'
+import { loginSchema, LoginFormInputs } from '@/schema/loginSchema'
 
 export function Login() {
   const navigate = useNavigate()
@@ -18,7 +15,7 @@ export function Login() {
     register,
     handleSubmit,
     formState: { errors, isSubmitting }
-  } = useForm<LoginFormInputs>()
+  } = useForm<LoginFormInputs>({ resolver: zodResolver(loginSchema) })
 
   const handleLogin: SubmitHandler<LoginFormInputs> = async data => {
     const { email, password } = data
@@ -46,13 +43,7 @@ export function Login() {
       <S.Form onSubmit={handleSubmit(handleLogin)}>
         <S.InputWrapper>
           <Input
-            {...register('email', {
-              required: '이메일을 입력해주세요.',
-              pattern: {
-                value: /^\S+@\S+$/i,
-                message: '유효한 이메일 주소를 입력해주세요.'
-              }
-            })}
+            {...register('email')}
             placeholder="example@test.com"
           />
           {errors.email && (
@@ -62,24 +53,21 @@ export function Login() {
         <S.InputWrapper>
           <Input
             type="password"
-            {...register('password', {
-              required: '비밀번호를 입력해주세요.',
-              minLength: {
-                value: 6,
-                message: '비밀번호는 최소 6자 이상이어야 합니다.'
-              }
-            })}
+            {...register('password')}
+            placeholder="비밀번호"
           />
           {errors.password && (
             <S.ErrorMessage>{errors.password.message}</S.ErrorMessage>
           )}
         </S.InputWrapper>
+
         <Button
           width="100%"
           fontSize="1.8rem"
           disabled={isSubmitting}>
           {isSubmitting ? '로그인 중...' : '로그인'}
         </Button>
+
         <S.Divider />
         <Button
           width="100%"

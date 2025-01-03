@@ -27,7 +27,6 @@ export const InputWrapper = styled.div`
 
 export const Divider = styled.hr`
   margin: var(--spacing-5) 0;
-  border: none;
   border-top: 1px solid var(--color-border);
 `
 export const SignupText = styled.p`
@@ -39,7 +38,7 @@ export const SignupText = styled.p`
 
 export const SignupLink = styled.span`
   color: var(--color-main1);
-  font-weight: bold;
+  font-weight: 700;
   cursor: pointer;
   text-decoration: underline;
 `

@@ -39,7 +39,7 @@ export function Signup() {
   }
 
   return (
-    <div style={{ maxWidth: '400px', margin: '0 auto', padding: '20px' }}>
+    <div>
       <h1>회원가입</h1>
       <form onSubmit={handleSignup}>
         <div>
@@ -92,14 +92,7 @@ export function Signup() {
         이미 계정이 있으신가요?{' '}
         <button
           type="button"
-          onClick={() => navigate('/login')}
-          style={{
-            textDecoration: 'underline',
-            color: 'blue',
-            background: 'none',
-            border: 'none',
-            cursor: 'pointer'
-          }}>
+          onClick={() => navigate('/login')}>
           로그인
         </button>
       </p>

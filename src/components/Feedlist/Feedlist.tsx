@@ -2,18 +2,6 @@ import { FeedListProps } from '@/types/List'
 import * as S from './FeedList.styles'
 import { FeedFooter } from './Footer'
 
-/* 사용예시
-  <FeedList
-        image=""
-        profileImage=""
-        title=""
-        nickname=""
-        likes={}
-        comments={}
-        date=""
-        track={}
-      />
-*/
 const FeedList = ({
   image,
   profileImage,

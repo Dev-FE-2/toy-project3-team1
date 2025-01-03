@@ -1,12 +1,12 @@
 import { supabase } from '../../../supabaseConfig'
 import { useNavigate } from 'react-router-dom'
 import Input from '@/components/Input/Input'
-import LogoImage from '@/assets/img/logo/image.png'
 import { Button } from '@/components/button/Button'
 import * as S from './login.styles'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { loginSchema, LoginFormInputs } from '@/schema/loginSchema'
+import MainLogo from '@/assets/img/logo/floli.svg'
 
 export function Login() {
   const navigate = useNavigate()
@@ -35,10 +35,7 @@ export function Login() {
 
   return (
     <S.Container>
-      <S.Logo
-        src={LogoImage}
-        alt="Floli Logo"
-      />
+      <S.Logo src={MainLogo} />
 
       <S.Form onSubmit={handleSubmit(handleLogin)}>
         <S.InputWrapper>

@@ -26,11 +26,11 @@ export const Menu = styled.div`
   background-color: var(--color-white);
 `
 
-export const MenuItem = styled(Link)`
+export const MenuItem = styled(Link)<{ $isCenter?: boolean }>`
   align-items: center;
   cursor: pointer;
   text-align: center;
-
+  flex: ${props => (props.$isCenter ? '0 0 20%' : '1')};
   span {
     font-size: var(--fs-m);
     color: #333;
@@ -38,6 +38,6 @@ export const MenuItem = styled(Link)`
 `
 
 export const Icon = styled.div<IconProps>`
-  font-size: 2.4rem;
+  font-size: 3rem;
   margin-bottom: 0.5rem;
 `

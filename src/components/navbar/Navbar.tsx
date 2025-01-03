@@ -44,7 +44,8 @@ export default function Navbar() {
         </S.MenuItem>
         <S.MenuItem
           onClick={() => handleClick('add')}
-          to="/playlist/create">
+          to="/playlist/create"
+          $isCenter>
           <S.Icon active={active === 'add'}>
             {active === 'add' ? (
               <IoAddCircle size={48} />
@@ -68,7 +69,7 @@ export default function Navbar() {
         </S.MenuItem>
         {/* 유저 프로필 사진 */}
         <S.MenuItem to="/mypage">
-          <S.Icon>0</S.Icon>
+          <S.Icon>🧑</S.Icon>
           <span>라이브러리</span>
         </S.MenuItem>
       </S.Menu>

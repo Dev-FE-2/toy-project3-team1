@@ -2,8 +2,8 @@ import ReactDOM from 'react-dom'
 import * as S from '@/styles/modal/modalfull.style'
 import { useScrollLock } from '@/hooks/useScrollLock'
 import { IModalDefaultProps } from '@/types/modal'
-import { MouseEvent, useCallback, useEffect } from 'react'
-import { useLocation, useNavigate } from 'react-router-dom'
+import { MouseEvent } from 'react'
+//import { useLocation, useNavigate } from 'react-router-dom'
 import HeaderSub from '../header/header-sub/HeaderSub'
 
 const ModalFull = ({

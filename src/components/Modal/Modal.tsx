@@ -2,8 +2,7 @@ import ReactDOM from 'react-dom'
 import * as S from '@/styles/modal/modal.style'
 import { useScrollLock } from '@/hooks/useScrollLock'
 import { IModalExtendsProps } from '@/types/modal'
-import { useLocation, useNavigate } from 'react-router-dom'
-import { MouseEvent, useCallback, useEffect } from 'react'
+import { MouseEvent } from 'react'
 
 const Modal = ({
   id,
@@ -21,9 +20,9 @@ const Modal = ({
 
   useScrollLock({ isOpen })
 
-  const handlePopState = useCallback(() => {
-    // closeIdModal();
-  }, [])
+  // const handlePopState = useCallback(() => {
+  //   // closeIdModal();
+  // }, [])
 
   // useEffect(() => {
   //   if (isOpen) {

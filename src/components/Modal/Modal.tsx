@@ -14,8 +14,8 @@ const Modal = ({
 }: IModalExtendsProps) => {
   const modalRoot = document.getElementById('modal-container')
 
-  const navigate = useNavigate()
-  const { pathname } = useLocation()
+  // const navigate = useNavigate()
+  // const { pathname } = useLocation()
 
   // const { closeIdModal } = useToggleModal({ modalId: id });
 
@@ -25,17 +25,17 @@ const Modal = ({
     // closeIdModal();
   }, [])
 
-  useEffect(() => {
-    if (isOpen) {
-      navigate(`${pathname}?modal=${id}`)
+  // useEffect(() => {
+  //   if (isOpen) {
+  //     navigate(`${pathname}?modal=${id}`)
 
-      window.addEventListener('popstate', handlePopState)
+  //     window.addEventListener('popstate', handlePopState)
 
-      return () => {
-        window.removeEventListener('popstate', handlePopState)
-      }
-    }
-  }, [isOpen, navigate, pathname, id, handlePopState])
+  //     return () => {
+  //       window.removeEventListener('popstate', handlePopState)
+  //     }
+  //   }
+  // }, [isOpen, navigate, pathname, id, handlePopState])
 
   const handleClick = (e: MouseEvent<HTMLDivElement>) => e.stopPropagation()
 

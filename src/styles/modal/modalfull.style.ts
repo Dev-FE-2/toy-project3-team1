@@ -11,15 +11,18 @@ export const ModalOverlay = styled.div`
   position: fixed;
   z-index: var(--modal-index);
   top: 0;
-  left: 0;
+  left: 50%;
   width: 100%;
+  max-width: var(--max-width);
   height: 100%;
   background: var(--color-white);
   overflow-y: auto;
+  transform: translateX(-50%);
 `
 
 export const ModalContainer = styled.div`
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   transform: translateY(20%);

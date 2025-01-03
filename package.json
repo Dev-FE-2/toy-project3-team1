@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "generate-types": "npx supabase gen types typescript --project-id https://vpxgcvxodypztnxelmqx.supabase.co --schema public > types_db.ts",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",

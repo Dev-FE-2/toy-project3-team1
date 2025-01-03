@@ -1,11 +1,17 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Home from '@/pages/Home'
 import Layout from '@/components/Layout/Layout'
-import Login from '@/pages/login'
-import Signup from '@/pages/signup'
-import Mypage from '@/pages/mypage'
-import View from '@/pages/view'
-import NotFound from '@/pages/notfound'
+import {
+  Login,
+  Mypage,
+  MyPlaylists,
+  NotFound,
+  PlaylistCreate,
+  Signup,
+  Subscriptions,
+  UserProfile,
+  View
+} from '@/pages'
+import { Home } from '@/pages/Home'
 
 // const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
 //   const session = supabase.auth.getSession()
@@ -26,6 +32,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <Layout />,
+    errorElement: <NotFound />,
     children: [
       { path: '/', element: <Home /> },
       { path: '/login', element: <Login /> },
@@ -39,16 +46,27 @@ const router = createBrowserRouter([
         )
       },
       {
-        path: '/detail/:id',
-        element: (
-          // <ProtectedRoute>
-          <View />
-          // </ProtectedRoute>
-        )
+        path: '/view/:id',
+        element: <View />
+      },
+      {
+        path: '/subscriptions',
+        element: <Subscriptions />
+      },
+      {
+        path: '/my-playlists',
+        element: <MyPlaylists />
+      },
+      {
+        path: '/profile/:userId',
+        element: <UserProfile />
+      },
+      {
+        path: '/playlist/create',
+        element: <PlaylistCreate />
       }
     ]
-  },
-  { path: '*', element: <NotFound /> }
+  }
 ])
 
 export default function Router() {

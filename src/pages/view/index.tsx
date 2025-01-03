@@ -1,5 +1,3 @@
-const View = () => {
+export const View = () => {
   return <div>View</div>
 }
-
-export default View

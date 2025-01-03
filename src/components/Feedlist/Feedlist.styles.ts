@@ -6,9 +6,9 @@ export const CardContainer = styled.div`
   flex-direction: column;
   align-items: flex-start;
   background-color: var(--color-bg1);
-  border-radius: var(--radius-md);
   box-shadow: var(--shadow-s);
-  max-width: 36rem;
+  max-width: 50rem;
+  margin: auto;
 `
 
 export const ImageWrapper = styled.div`
@@ -16,7 +16,6 @@ export const ImageWrapper = styled.div`
   height: 15rem;
   position: relative;
   overflow: hidden;
-  border-radius: var(--radius-md);
   img {
     width: 100%;
     height: 100%;

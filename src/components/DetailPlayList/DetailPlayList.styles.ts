@@ -4,7 +4,8 @@ export const CardContainer = styled.div`
   display: flex;
   align-items: center;
   border-radius: var(--radius-md);
-  max-width: 34rem;
+  max-width: 50rem;
+  margin: auto;
 `
 
 export const ImageWrapper = styled.div`
@@ -30,7 +31,7 @@ export const TextWrapper = styled.div`
 
 export const Title = styled.h4`
   font-size: var(--fs-l);
-  font-weight: bold;
+  font-weight: 700;
   color: var(--color-black);
   margin: 0;
   overflow: hidden;

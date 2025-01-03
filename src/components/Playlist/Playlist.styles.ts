@@ -6,7 +6,8 @@ export const CardContainer = styled.div`
   align-items: center;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-s);
-  max-width: 34rem;
+  max-width: 50rem;
+  margin: auto;
 `
 
 export const ImageWrapper = styled.div`

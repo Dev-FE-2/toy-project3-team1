@@ -1,22 +1,12 @@
 import * as S from './DetailPlayList.styles'
 
-/* 사용예시
-     <DetailPlayList
-        image=""
-        title=""
-        nickname=""
-      />
-*/
-
-const DetailPlayList = ({
-  image,
-  title,
-  nickname
-}: {
+interface DetailPlayListProps {
   image: string
   title: string
   nickname: string
-}) => {
+}
+
+const DetailPlayList = ({ image, title, nickname }: DetailPlayListProps) => {
   return (
     <S.CardContainer>
       <S.ImageWrapper>

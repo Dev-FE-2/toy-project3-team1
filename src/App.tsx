@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Home from './pages/Home'
 
 const Container = styled.div`
   max-width: var(--max-width);
@@ -8,5 +9,10 @@ const Container = styled.div`
 `
 
 export default function App() {
-  return <Container>{/* 나중에 outlet 들어갈 자리 */}</Container>
+  return (
+    <Container>
+      {/* 나중에 outlet 들어갈 자리 */}
+      <Home />
+    </Container>
+  )
 }

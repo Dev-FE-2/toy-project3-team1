@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom'
+import { Outlet, useLocation } from 'react-router-dom'
 import styled from 'styled-components'
 import Header from '../header/header-main/Header'
 
@@ -10,9 +10,21 @@ const Container = styled.div`
 `
 
 const Layout = () => {
+  const location = useLocation()
+  let shouldHideHeader = false
+
+  switch (location.pathname) {
+    case '/login':
+    case '/signup':
+      shouldHideHeader = true
+      break
+    default:
+      shouldHideHeader = false
+  }
+
   return (
     <Container>
-      <Header />
+      {!shouldHideHeader && <Header />}
       <Outlet />
     </Container>
   )

@@ -1,7 +1,5 @@
 import styled from 'styled-components'
-import Home from './pages/Home'
-import { Outlet } from 'react-router-dom'
-import Login from './pages/Login'
+import Router from './routes/Router'
 
 const Container = styled.div`
   max-width: var(--max-width);
@@ -13,8 +11,7 @@ const Container = styled.div`
 export default function App() {
   return (
     <Container>
-      {/* 나중에 outlet 들어갈 자리 */}
-      <Login />
+      <Router />
     </Container>
   )
 }

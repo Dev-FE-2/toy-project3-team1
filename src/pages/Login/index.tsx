@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { supabase } from '/supabase'
+import { supabase } from '../../../supabaseConfig'
 import { useNavigate } from 'react-router-dom'
 
 export default function Login() {
@@ -7,6 +7,7 @@ export default function Login() {
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
+
   const navigate = useNavigate()
 
   const handleLogin = async (e: React.FormEvent) => {
@@ -26,7 +27,7 @@ export default function Login() {
     } else {
       console.log('로그인 성공:', data)
       alert('로그인 성공!')
-      navigate('/') // 로그인 후 홈 페이지로 이동
+      navigate('/')
     }
   }
 
@@ -61,6 +62,8 @@ export default function Login() {
         </button>
         {error && <p style={{ color: 'red' }}>{error}</p>}
       </form>
+      <hr />
+      <button onClick={() => navigate('/signup')}>회원가입</button>
     </div>
   )
 }

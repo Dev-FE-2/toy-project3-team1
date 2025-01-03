@@ -11,7 +11,7 @@ import {
 import * as S from './Navbar.styled'
 
 export default function Navbar() {
-  const [active, setActive] = useState<String>('home')
+  const [active, setActive] = useState<string>('home')
 
   const handleClick = (icon: string) => {
     setActive(icon)

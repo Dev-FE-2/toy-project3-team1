@@ -5,4 +5,5 @@ export interface ProfileButtonProps {
   altText?: string
   size?: ProfileButtonSize
   userId?: string
+  className?: string
 }
